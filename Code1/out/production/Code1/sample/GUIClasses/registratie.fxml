@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -12,8 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GUIClasses.ControllerRegistratie">
    <left>
       <VBox prefHeight="291.0" prefWidth="158.0" style="-fx-border-color: lightgrey;" BorderPane.alignment="CENTER">
          <children>
@@ -86,28 +86,28 @@
                         <Insets left="90.0" />
                      </padding>
                   </Label>
-                  <Button mnemonicParsing="false" text="Verzoek indienen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-                  <TextField GridPane.columnIndex="1">
+                  <Button mnemonicParsing="false" onAction="#Bevestigen" text="Verzoek indienen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                  <TextField fx:id="txtGebruikersnaam" GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets right="30.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <TextField fx:id="txtWachtwoord" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets right="30.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <TextField fx:id="txtNaam" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets right="30.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <GridPane.margin>
                         <Insets right="30.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="4">
+                  <TextField fx:id="txtDiploma" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <GridPane.margin>
                         <Insets right="30.0" />
                      </GridPane.margin>
@@ -157,10 +157,13 @@
                   <Insets right="10.0" />
                </GridPane.margin>
             </Button>
-            <ImageView fitHeight="62.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+            <ImageView fitHeight="45.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets bottom="20.0" left="20.0" top="20.0" />
                </GridPane.margin>
+               <image>
+                  <Image url="@../Images/Logo.jpg" />
+               </image>
             </ImageView>
          </children>
       </GridPane>
