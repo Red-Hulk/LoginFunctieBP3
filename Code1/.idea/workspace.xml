@@ -29,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../01.Root/01.School/01.Jaar 2020-2021/01.Semesters/02.Blok 2/02.Programmeren/01.Lesmateriaal/01.Leerstof/01.Uitwerkingen/Lessen Thomas/Java Les 3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,13 +54,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,7 +83,8 @@
       <updated>1613675865004</updated>
       <workItem from="1613675866185" duration="609000" />
       <workItem from="1613730026058" duration="4859000" />
-      <workItem from="1613735595820" duration="2922000" />
+      <workItem from="1613735595820" duration="3182000" />
+      <workItem from="1613755468948" duration="2718000" />
     </task>
     <servers />
   </component>

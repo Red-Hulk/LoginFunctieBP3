@@ -49,7 +49,7 @@ public class ControllerRegistratie implements Initializable {
 
 
 
-        if(tG.equals("") && tW.equals("") && tN.equals("") && tE.equals("") && tD.equals("")){
+        if(tG.equals("") || tW.equals("") || tN.equals("") || tE.equals("") || tD.equals("")){
             JOptionPane.showMessageDialog(null, "Niet alle invoervelden zijn ingevuld!");
         }
         else{
