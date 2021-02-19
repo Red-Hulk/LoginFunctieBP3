@@ -6,9 +6,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 import sample.BackEndClasses.Registratie;
 
 import javax.swing.*;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
@@ -33,6 +35,9 @@ public class ControllerRegistratie implements Initializable {
 
     @FXML
     private TextField txtDiploma;
+
+    @FXML
+    private Button closeButton;
 
 
 
@@ -68,8 +73,20 @@ public class ControllerRegistratie implements Initializable {
 
     }
 
+    public void terugInloggen(ActionEvent actionEvent) throws IOException {
+
+        Stage stage = (Stage) closeButton.getScene().getWindow();
+        stage.close();
+
+        Stage voorbeeld = new Stage();
+        GUILogin scherm = new GUILogin(voorbeeld);
+
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
     }
+
+
 }

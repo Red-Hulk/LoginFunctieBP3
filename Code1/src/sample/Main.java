@@ -13,7 +13,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        GUIRegistratie voorbeeld1 = new GUIRegistratie(primaryStage);
         GUILogin voorbeeld = new GUILogin(primaryStage);
     }
 

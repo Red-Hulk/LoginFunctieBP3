@@ -72,7 +72,7 @@
          <bottom>
             <BorderPane prefHeight="44.0" prefWidth="400.0" BorderPane.alignment="CENTER">
                <right>
-                  <Button mnemonicParsing="false" text="Registreer" BorderPane.alignment="CENTER">
+                  <Button fx:id="CloseButton" mnemonicParsing="false" onAction="#Registreren" text="Registreer" BorderPane.alignment="CENTER">
                      <BorderPane.margin>
                         <Insets right="20.0" />
                      </BorderPane.margin>
@@ -92,7 +92,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" onAction="#Inloggen" text="Inloggen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                  <Button fx:id="btnInloggen" mnemonicParsing="false" onAction="#Inloggen" text="Inloggen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
