@@ -15,7 +15,7 @@ public class GUILogin {
         primaryStage.setMinHeight(500);
 
 
-        Parent root = FXMLLoader.load(getClass().getResource("test.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         primaryStage.setTitle("Login Scherm");
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.show();

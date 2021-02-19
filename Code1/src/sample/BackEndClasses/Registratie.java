@@ -35,9 +35,6 @@ public class Registratie {
         lijst.forEach(e->{
             System.out.println(e.getGebruikersnaam() + " " + e.getWw() + " " + e.getNaam() + " " + e.getEmail() + " " + e.getDiploma());
         });
-
-        System.out.println("hallo");
-
     }
 
     public void stuurNaarDatabase(Registratie persoon){
