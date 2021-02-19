@@ -1,4 +1,4 @@
 package sample.GUIClasses;
 
-public class Controller {
+public class ControllerLogin {
 }

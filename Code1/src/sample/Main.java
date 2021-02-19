@@ -6,13 +6,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import sample.GUIClasses.GUILogin;
+import sample.GUIClasses.GUIRegistratie;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        GUILogin voorbeeld = new GUILogin(primaryStage);
+        GUIRegistratie voorbeeld1 = new GUIRegistratie(primaryStage);
+        //GUILogin voorbeeld = new GUILogin(primaryStage);
     }
 
 
