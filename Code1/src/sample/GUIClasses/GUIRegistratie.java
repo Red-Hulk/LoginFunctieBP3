@@ -1,5 +1,6 @@
 package sample.GUIClasses;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -19,4 +20,5 @@ public class GUIRegistratie {
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.show();
     }
+
 }
