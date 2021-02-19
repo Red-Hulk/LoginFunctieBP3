@@ -45,15 +45,26 @@ public class ControllerRegistratie implements Initializable {
         String tE = txtEmail.getText();
         String tD = txtDiploma.getText();
 
-        System.out.println(tG + " " + tW + " " + tN + " " + tE + " " + tD + " ");
+        //System.out.println(tG + " " + tW + " " + tN + " " + tE + " " + tD + " ");
 
-        Registratie voorbeeld = new Registratie(tG, tW, tN, tE, tD);
 
-        txtGebruikersnaam.clear();
-        txtWachtwoord.clear();
-        txtNaam.clear();
-        txtEmail.clear();
-        txtDiploma.clear();
+
+        if(tG.equals("") && tW.equals("") && tN.equals("") && tE.equals("") && tD.equals("")){
+            JOptionPane.showMessageDialog(null, "Niet alle invoervelden zijn ingevuld!");
+        }
+        else{
+            Registratie voorbeeld = new Registratie(tG, tW, tN, tE, tD);
+            voorbeeld.voegToe(voorbeeld);
+            voorbeeld.stuurNaarDatabase(voorbeeld);
+
+            txtGebruikersnaam.clear();
+            txtWachtwoord.clear();
+            txtNaam.clear();
+            txtEmail.clear();
+            txtDiploma.clear();
+
+
+        }
 
     }
 
